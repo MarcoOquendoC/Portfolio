@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-:root {
-  --color-text: #172b4d;
-  --color-primary: black;
-  --color-secondary: green;
-  --color-background: #191765;
-}
-
 * {
   margin: 0;
   border: 0;
@@ -15,35 +8,50 @@
   font-family: 'Inter', sans-serif;
 }
 
-body {
-  color: var(--color-secondary);
-  width: 375px;
-  height: 1000px;
+header {
+  width: 100%;
+  height: 48px;
+  align-items: center;
+  display: flex;
+  padding-left: 24px;
+  padding-right: 24px;
+  justify-content: space-between;
 }
 
-h1 {
-  border-width: 1px;
+.greeting {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
   color: #28352f;
-  flex: 1;
 }
 
-h2 {
+.headline {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  text-align: center;
 }
 
 .name {
+  padding-top: 64px;
   color: #172b4d;
-  text-align: center;
 }
 
 .ocupation {
   color: #36b37e;
-  text-align: center;
 }
 
 p {
@@ -57,39 +65,20 @@ p {
   padding: 0 24px 0 24px;
 }
 
-header {
-  height: 48px;
-  align-items: center;
-  display: flex;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
 main {
-  padding-top: 64px;
-  background-image: url("/images/background.png");
-  width: 375px;
   height: auto;
 }
 
 ul {
   display: flex;
   padding: 10px;
-  column-gap: 10px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
 }
 
 li {
   list-style: none;
-}
-
-.social-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
 }
 
 .down-icon img {
