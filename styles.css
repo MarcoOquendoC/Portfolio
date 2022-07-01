@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root {
-  --color-text: #172B4D;
+  --color-text: #172b4d;
   --color-primary: black;
   --color-secondary: green;
   --color-background: #191765;
 }
 
 * {
-  margin: 0px;
-  border: 0px;
-  padding: 0px;
+  margin: 0;
+  border: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
@@ -22,12 +22,11 @@ body {
 }
 
 h1 {
-  color: var(--color-text);
   border-width: 1px;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: #28352F;
+  color: #28352f;
   flex: 1;
 }
 
@@ -38,25 +37,24 @@ h2 {
 }
 
 .name {
-  color: #172B4D;
+  color: #172b4d;
   text-align: center;
 }
 
 .ocupation {
-  color: #36B37E;
+  color: #36b37e;
   text-align: center;
 }
 
-article {
-  color: var(--color-text);
+p {
   text-align: center;
   margin-top: 58px;
   margin-bottom: 58px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #172B4D;
-  padding: 0px 24px 0px 24px;
+  color: #172b4d;
+  padding: 0 24px 0 24px;
 }
 
 header {
@@ -80,7 +78,7 @@ ul {
   column-gap: 10px;
   align-items: center;
   justify-content: center;
-  }
+}
 
 li {
   list-style: none;
@@ -98,5 +96,5 @@ li {
   border: 1px solid #def1e6;
   border-radius: 50%;
   width: 30px;
-  margin: 0px 167px 0px 168px;
+  margin: 0 167px 0 168px;
 }
