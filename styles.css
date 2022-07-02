@@ -124,6 +124,7 @@ li {
   background-color: white;
   display: flex;
   flex-direction: column;
+  color: #3a4a42;
 }
 
 .p-title {
@@ -156,6 +157,7 @@ li {
   align-self: center;
   margin-top: 29px;
   margin-bottom: 24px;
+  color: #ffffff;
 }
 
 .about {
@@ -230,6 +232,13 @@ li {
   height: 60px;
 }
 
+.about-container {
+  padding: 30px;
+  background-image: url(/images/about.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
 button:hover {
   cursor: pointer;
   background: #36b37f;
@@ -239,4 +248,9 @@ button:hover {
 button:active {
   background: #fff;
   transform: translateY(4px);
+}
+
+.get-my-resume {
+  background-image: url(/images/about2.png);
+  background-repeat: no-repeat;
 }
