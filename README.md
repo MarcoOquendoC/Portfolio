@@ -1,11 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Set up a "Hello Microverse" project
+# Set up a Portfolio project
 
-> For the first milestone in the process of creating a portfolio website, I will:
+> ## Build my website portfolio.
 
-- Set up a new repository and prepare it for development using best practices (e.g. [linters](https://github.com/microverseinc/linters-config/tree/master/html-css)).
-- Build the first 2 sections of the mobile website using a template chosen in the [previous step](https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/sneak_peek.md).
+> 1. Setup and mobile version skeleton. ✅
+> 2. **Mobile version.** 
 
 ## Built With
 
