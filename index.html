@@ -16,7 +16,7 @@
         </a>
       </nav>
     </header>
-    <main>
+    <main class="main-section">
       <section class="headline">
         <h1 class="title name">
           Hey there. I'm Marco
@@ -183,10 +183,47 @@
             </div>
           </div>
         </div>
-        <span class="chat">
-          I'm always <br> interested in <br> hearing about <br> new projects, so <br> if you'd like to <br> chat please get <br> in touch.
-        </span>
       </section>
     </main>
+    <footer class="form-section">
+      <p class="chat">
+        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+      </p>
+      <form class="user-form" id="contactform" 
+      action="https://formspree.io/f/mbjwvgqk" 
+      method="post"
+      >
+      <input id="name" type="text" name="name" maxlength="30" placeholder="Full name" required>
+      <input id="email" type="email" id="email" name="_replyto" placeholder="Email address" required>
+      <textarea id="msg" name="message" maxlength="500" required>Enter text here</textarea>
+      <input type="hidden" name="_next" value="#" />
+      <input type="hidden" name="_subject" value="Website contact" />
+      <input type="text" name="_gotcha" style="display:none" />
+        <button type="submit" class="primary-btn">
+          Get in touch
+        </button>
+        <div class="social-container">
+          <ul>
+            <li>
+              <a href="#"><img src="/images/twitter.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="/images/Linkedin-icon.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="/images/medium.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="/images/github.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="/images/angellist.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </form>
+      <p class="last-email">marcooquendoc@gmail.com</p>
+      <div class="last-bar"></div>
+    </footer>
   </body>
 </html>
