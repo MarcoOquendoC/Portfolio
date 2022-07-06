@@ -331,3 +331,28 @@ button:active {
   height: 114px;
   border: 1px solid #60C095;
 }
+
+.last-email {
+  text-align: center;
+  color: #42526E;
+  font-weight: 400;
+  font-size: 20px;
+  height: 189px;
+  margin-bottom: 147px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.last-bar {
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px/2 - 0.5px);
+  bottom: 8px;
+  background: #0D151E;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
