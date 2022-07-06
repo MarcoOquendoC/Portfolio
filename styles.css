@@ -1,34 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-
-.bc1 {
-  background-color: #f0bda5;
-}
-
-.bc2 {
-  background-color: #f6e3aa;
-}
-
-.bc3 {
-  background-color: #c2f69b;
-}
-
-.bc4 {
-  background-color: #6db575;
-}
-
-.bc5 {
-  background-color: #8cdae6;
-}
-.bc6 {
-  background-color: #92cef1;
-}
-
-.bc7 {
-  background-color: #9094e2;
-}
-
-
 * {
   margin: 0;
   border: 0;
@@ -313,7 +284,9 @@ button:active {
   align-items: center;
 }
 
-#name, #email, #msg {
+#name,
+#email,
+#msg {
   margin-bottom: 24px;
   padding: 16px;
   border-radius: 4px;
@@ -322,19 +295,20 @@ button:active {
   width: 327px;
 }
 
-#name, #email {
+#name,
+#email {
   height: 48px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
 }
 
 #msg {
   height: 114px;
-  border: 1px solid #60C095;
+  border: 1px solid #60c095;
 }
 
 .last-email {
   text-align: center;
-  color: #42526E;
+  color: #42526e;
   font-weight: 400;
   font-size: 20px;
   height: 189px;
@@ -350,9 +324,9 @@ body {
 .last-bar {
   width: 134px;
   height: 5px;
-  left: calc(50% - 134px/2 - 0.5px);
+  left: calc(50% - 134px / 2 - 0.5px);
   bottom: 8px;
-  background: #0D151E;
+  background: #0d151e;
   border-radius: 10px;
   margin-bottom: 8px;
 }
