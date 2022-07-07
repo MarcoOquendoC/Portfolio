@@ -29,9 +29,10 @@ header {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-image: url("/images/background.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
   background-position: center;
   height: auto;
   padding-left: 24px;
@@ -66,7 +67,13 @@ header {
 }
 
 main {
-  height: auto;
+  height: 110%;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .social-container ul {
@@ -85,7 +92,8 @@ li {
   border: 1px solid #def1e6;
   border-radius: 50%;
   width: 30px;
-  margin: 0 167px 0 168px;
+  display: block;
+  margin: auto;
 }
 
 .section-title {
@@ -150,16 +158,6 @@ li {
   color: #3a4a42;
 }
 
-.primary-btn {
-  background-color: #36b37f;
-  border-radius: 4px;
-  padding: 12px;
-  align-self: center;
-  margin-top: 29px;
-  margin-bottom: 24px;
-  color: #fff;
-}
-
 .about {
   display: flex;
   flex-direction: column;
@@ -176,6 +174,7 @@ li {
   line-height: 28px;
   color: #172b4d;
   padding: 0 24px 0 24px;
+  width: 328px;
 }
 
 .about-card {
@@ -219,13 +218,14 @@ li {
 }
 
 .chat {
-  box-sizing: border-box;
+  width: 327px;
   margin-top: 60px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+  margin-bottom: 58px;
 }
 
 .about2 {
@@ -239,18 +239,105 @@ li {
   background-repeat: no-repeat;
 }
 
-button:hover {
+.get-my-resume {
+  background-image: url(/images/about2.png);
+  background-repeat: no-repeat;
+}
+
+.form-section {
+  width: 85%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-right: 24px;
+  justify-content: space-between;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  width: 327px;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name,
+#email,
+#msg {
+  margin-bottom: 24px;
+  padding: 16px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 15px;
+  width: 327px;
+}
+
+#name,
+#email {
+  height: 48px;
+  border: 1px solid #d0d9d4;
+}
+
+#msg {
+  height: 114px;
+  border: 1px solid #60c095;
+}
+
+.last-email {
+  text-align: center;
+  color: #42526e;
+  font-weight: 400;
+  font-size: 20px;
+  height: 189px;
+  margin-bottom: 147px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.last-bar {
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px / 2 - 0.5px);
+  bottom: 8px;
+  background: #0d151e;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.social-background {
+  background-image: url(/images/form.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.primary-btn {
+  background-color: #36b37f;
+  border-radius: 4px;
+  padding: 12px;
+  align-self: center;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.primary-btn:hover {
   cursor: pointer;
   background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
-button:active {
-  background: #fff;
-  transform: translateY(4px);
-}
-
-.get-my-resume {
-  background-image: url(/images/about2.png);
-  background-repeat: no-repeat;
+.primary-btn:active {
+  background-color: #008552;
+  transform: translateY(2px);
 }
