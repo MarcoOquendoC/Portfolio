@@ -321,17 +321,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.primary-btn:hover {
-  cursor: pointer;
-  background: #36b37f;
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-}
-
-.primary-btn:active {
-  background-color: #008552;
-  transform: translateY(4px);
-}
-
 .primary-btn {
   background-color: #36b37f;
   border-radius: 4px;
@@ -340,4 +329,15 @@ body {
   margin-top: 20px;
   margin-bottom: 24px;
   color: #fff;
+}
+
+.primary-btn:hover {
+  cursor: pointer;
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.primary-btn:active {
+  background-color: #008552;
+  transform: translateY(2px);
 }
