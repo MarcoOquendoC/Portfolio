@@ -52,7 +52,17 @@ header {
 }
 
 .ocupation {
-  color: #36b37e;
+  animation: change-color 2s ease infinite alternate;
+}
+
+@keyframes change-color {
+  0% {
+    color: #36b37e;
+  }
+
+  100% {
+    color: #d2320a;
+  }
 }
 
 .headline p {
