@@ -63,21 +63,7 @@ header {
 }
 
 .ocupation {
-  animation: color 2s ease infinite alternate;
-}
-
-@keyframes color {
-  0% {
-    color: #36b37e;
-  }
-
-  50% {
-    color: #d2320a;
-  }
-
-  100% {
-    color: #36b37e;
-  }
+  color: #36b37e;
 }
 
 .headline .description {
@@ -124,7 +110,6 @@ hr {
 .work-grid {
   display: grid;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
   gap: 1vw;
   margin: 2vw;
 }
@@ -236,7 +221,6 @@ hr {
 .about-grid {
   display: grid;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
   gap: 2vw;
   margin: 2vw;
 }
@@ -392,6 +376,11 @@ hr {
   .form-group {
     width: 93vw;
   }
+
+  .work-grid,
+  .about-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+  }
 }
 
 @media only screen and (min-width: 769px) {
@@ -437,5 +426,10 @@ hr {
 
   .form-group {
     width: 50vw;
+  }
+
+  .work-grid,
+  .about-grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
