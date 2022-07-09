@@ -16,7 +16,22 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+.top-navigation-container {
+  display: flex;
+  gap: 10px;
+}
+
+.top-navigation-container a {
+  text-decoration: none;
+}
+
+.top-navigation {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
 }
 
 .welcome {
@@ -31,18 +46,16 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-image: url("/images/background.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  padding: 4rem 2rem 0 2rem;
+  background-size: 100% 100%;
+  padding: 0 2rem 0 2rem;
 }
 
 .title {
   font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 52px;
+  font-size: 2rem;
   text-align: center;
+  align-self: center;
 }
 
 .name {
@@ -50,23 +63,21 @@ header {
 }
 
 .ocupation {
-  animation: rotate-and-color 2s ease infinite alternate;
+  animation: color 2s ease infinite alternate;
 }
 
-@keyframes rotate-and-color {
+@keyframes color {
   0% {
     color: #36b37e;
-    transform: rotate(-2deg);
+
   }
 
   50% {
     color: #d2320a;
-    transform: rotate(2deg);
   }
 
   100% {
     color: #36b37e;
-    transform: rotate(-2deg);
   }
 }
 
@@ -114,7 +125,7 @@ hr {
 .work-grid {
   display: grid;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
   gap: 1vw;
   margin: 2vw;
 }
@@ -122,7 +133,7 @@ hr {
 .work-card {
   border: 1px solid #d0d9d4;
   border-radius: 0.6rem;
-  padding-top: calc(3.5 / 4 * 100%);
+  padding-top: calc(9 / 12 * 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,7 +151,7 @@ hr {
 .work-card-content h3 {
   padding-top: 1rem;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -156,7 +167,7 @@ hr {
   border-radius: 0.4rem;
   background-color: #ebf0ee;
   padding: 0.6rem;
-  font-size: 0.9rem;
+  font-size: 0.5rem;
   font-weight: 600;
   color: #3a4a42;
   text-align: center;
@@ -167,8 +178,9 @@ hr {
   border-radius: 4px;
   padding: 0.8rem;
   align-self: center;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   color: #fff;
+  font-size: 10px;
 }
 
 .primary-btn:hover {
@@ -225,7 +237,7 @@ hr {
 .about-grid {
   display: grid;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
   gap: 2vw;
   margin: 2vw;
 }
@@ -233,7 +245,7 @@ hr {
 .about-card {
   border: 1px solid #c1c7d0;
   border-radius: 0.6rem;
-  padding-top: calc(1 / 1 * 10%);
+  padding-top: calc(1 / 12 * 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -243,7 +255,7 @@ hr {
 .about-card h2 {
   padding-top: 1rem;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
   color: #344563;
 }
@@ -260,7 +272,7 @@ hr {
   border-radius: 0.4rem;
   background-color: #fff;
   padding: 0.6rem;
-  font-size: 0.9rem;
+  font-size: .4rem;
   font-weight: 600;
   color: #36b37e;
   text-align: center;
@@ -276,7 +288,7 @@ hr {
 
 .form-description {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2rem;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
@@ -300,7 +312,7 @@ hr {
   font-size: 15px;
   display: block;
   margin: auto;
-  width: min(100vw, 600px);
+  width: 100%;
 }
 
 #name,
@@ -352,13 +364,43 @@ hr {
   margin-bottom: 8px;
 }
 
+@media only screen and (min-width: 50px) {
+  .headline {
+    background-image: url("/images/background.png");
+  }
+
+  .form-responsive-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-btn {
+    align-self: center;
+  }
+
+  .only-movile {
+    display: block;
+  }
+
+  .only-desktop {
+    display: none;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .form-group {
+    width: 93vw;
+  }
+}
+
 @media only screen and (min-width: 769px) {
   .headline {
     background-image: url("/images/desktop-background.png");
-    background-position: top center;
   }
 
-  .flex-responsive-wrapper {
+  .form-responsive-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -377,23 +419,24 @@ hr {
     background-size: min(50%, 21rem), min(20%, 7rem);
   }
 
-  .form-btn {
-    width: fit-content;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .headline {
-    background-image: url("/images/background.png");
-    background-position: center center;
+  .only-movile {
+    display: none;
   }
 
-  .flex-responsive-wrapper {
-    display: flex;
-    flex-direction: column;
+  .only-desktop {
+    display: block;
+  }
+
+  header {
+    justify-content: center;
+    gap: 2rem;
   }
 
   .form-btn {
-    align-self: center;
+    align-self: start;
+  }
+
+  .form-group {
+    width: 50vw;
   }
 }
