@@ -50,7 +50,24 @@ header {
 }
 
 .ocupation {
-  color: #36b37e;
+  animation: rotate-and-color 2s ease infinite alternate;
+}
+
+@keyframes rotate-and-color {
+  0% {
+    color: #36b37e;
+    transform: rotate(-2deg);
+  }
+
+  50% {
+    color: #d2320a;
+    transform: rotate(2deg);
+  }
+
+  100% {
+    color: #36b37e;
+    transform: rotate(-2deg);
+  }
 }
 
 .headline .description {
