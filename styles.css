@@ -69,7 +69,6 @@ header {
 @keyframes color {
   0% {
     color: #36b37e;
-
   }
 
   50% {
@@ -178,7 +177,7 @@ hr {
   border-radius: 4px;
   padding: 0.8rem;
   align-self: center;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: #fff;
   font-size: 10px;
 }
@@ -272,7 +271,7 @@ hr {
   border-radius: 0.4rem;
   background-color: #fff;
   padding: 0.6rem;
-  font-size: .4rem;
+  font-size: 0.4rem;
   font-weight: 600;
   color: #36b37e;
   text-align: center;
