@@ -385,7 +385,7 @@ hr {
 
 @media only screen and (min-width: 769px) {
   .headline {
-    background-image: url("/images/desktop-background.png");
+    background-image: url("Portfolio/blob/application-deploy/images/desktop-background.png");
   }
 
   .form-responsive-wrapper {
