@@ -185,8 +185,8 @@ hr {
 .about-me {
   padding: 30px;
   background-image:
-    url(/images/about.png),
-    url(/images/about2.png);
+    url("https://marcooquendoc.github.io/Portfolio/images/about.png"),
+    url("https://marcooquendoc.github.io/Portfolio/images/about2.png");
   background-position:
     top -30px right,
     bottom left;
@@ -349,7 +349,7 @@ hr {
 
 @media only screen and (min-width: 50px) {
   .headline {
-    background-image: url("/images/background.png");
+    background-image: url("https://marcooquendoc.github.io/Portfolio/images/background.png");
   }
 
   .form-responsive-wrapper {
@@ -385,7 +385,7 @@ hr {
 
 @media only screen and (min-width: 769px) {
   .headline {
-    background-image: url("Portfolio/images/desktop-background.png");
+    background-image: url("https://marcooquendoc.github.io/Portfolio/images/desktop-background.png");
   }
 
   .form-responsive-wrapper {
