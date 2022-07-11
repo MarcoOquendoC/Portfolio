@@ -13,21 +13,22 @@ body {
   height: 100%;
 }
 
+body {
+  max-width: 860px;
+  margin: auto;
+}
+
 header {
   display: flex;
   align-items: center;
 }
 
 .top-navigation-container {
-  display: flex;
-  gap: 10px;
+  margin-bottom: 10vh;
 }
 
 .top-navigation-container a {
   text-decoration: none;
-}
-
-.top-navigation {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
@@ -42,7 +43,8 @@ header {
 }
 
 .headline {
-  width: 100vw;
+  width: 100%;
+  height: min(100vh, 600px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,6 +114,7 @@ hr {
   grid-auto-rows: auto;
   gap: 1vw;
   margin: 2vw;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
 }
 
 .work-card {
@@ -223,6 +226,7 @@ hr {
   grid-auto-rows: auto;
   gap: 2vw;
   margin: 2vw;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
 }
 
 .about-card {
@@ -275,15 +279,16 @@ hr {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
-  width: min(100%, 700px);
+  flex-basis: 50%;
   display: block;
   margin: 60px 1fr 58px 1fr;
 }
 
-.user-form {
+.form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  flex-basis: 50%;
 }
 
 #name,
@@ -350,11 +355,13 @@ hr {
 @media only screen and (min-width: 50px) {
   .headline {
     background-image: url("https://marcooquendoc.github.io/Portfolio/images/background.png");
+    justify-content: center;
   }
 
   .form-responsive-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
 
   .form-btn {
@@ -373,8 +380,8 @@ hr {
     justify-content: space-between;
   }
 
-  .form-group {
-    width: 93vw;
+  .form-input-container {
+    flex-basis: 100%;
   }
 
   .work-grid,
@@ -386,6 +393,7 @@ hr {
 @media only screen and (min-width: 769px) {
   .headline {
     background-image: url("https://marcooquendoc.github.io/Portfolio/images/desktop-background.png");
+    justify-content: start;
   }
 
   .form-responsive-wrapper {
@@ -396,8 +404,8 @@ hr {
 
   footer {
     background-image:
-      url(/images/bottom-left.png),
-      url(/images/bottom-right.png);
+      url(images/bottom-left.png),
+      url(images/bottom-right.png);
     background-position:
       bottom left,
       bottom right;
@@ -422,14 +430,5 @@ hr {
 
   .form-btn {
     align-self: start;
-  }
-
-  .form-group {
-    width: 50vw;
-  }
-
-  .work-grid,
-  .about-grid {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
