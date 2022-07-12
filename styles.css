@@ -65,12 +65,12 @@ header {
 }
 
 .ocupation {
-  color: #36b37e;
+  color: #26805a;
 }
 
 .headline .description {
   text-align: center;
-  width: min(100%, 700px);
+  width: min(100%, 500px);
 }
 
 .social-container ul {
@@ -168,6 +168,7 @@ hr {
   margin-bottom: 0.5rem;
   color: #fff;
   font-size: 10px;
+  font-weight: 600;
 }
 
 .primary-btn:hover {
@@ -188,8 +189,8 @@ hr {
 .about-me {
   padding: 30px;
   background-image:
-    url("https://marcooquendoc.github.io/Portfolio/images/about.png"),
-    url("https://marcooquendoc.github.io/Portfolio/images/about2.png");
+    url(images/about.png),
+    url(images/about2.png);
   background-position:
     top -30px right,
     bottom left;
@@ -259,7 +260,7 @@ hr {
   border-radius: 0.4rem;
   background-color: #fff;
   padding: 0.6rem;
-  font-size: 0.4rem;
+  font-size: 0.6rem;
   font-weight: 600;
   color: #36b37e;
   text-align: center;
@@ -354,7 +355,7 @@ hr {
 
 @media only screen and (min-width: 50px) {
   .headline {
-    background-image: url("https://marcooquendoc.github.io/Portfolio/images/background.png");
+    background-image: url(images/background.png);
     justify-content: center;
   }
 
@@ -392,7 +393,7 @@ hr {
 
 @media only screen and (min-width: 769px) {
   .headline {
-    background-image: url("https://marcooquendoc.github.io/Portfolio/images/desktop-background.png");
+    background-image: url(images/desktop-background.png);
     justify-content: start;
   }
 
