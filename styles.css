@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+:root {
+  --main-green: #26805a;
+  --active-color: #0b5e3d;
+  --main-darkblue: #172b4d;
+  --nav-darkblue: #344563;
+  --gray-border: #c1c7d0;
+  --paragraph-blue: #42526e;
+  --welcome-color: #28352f;
+  --last-bar-color: #0d151e;
+  --card-background-color: #ebf0ee;
+  --tag-color: #3a4a42;
+}
+
 * {
   border: 0;
   margin: 0;
@@ -32,14 +45,14 @@ header {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  color: #344563;
+  color: var(--nav-darkblue);
 }
 
 .welcome {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: #28352f;
+  color: var(--welcome-color);
 }
 
 .headline {
@@ -61,16 +74,16 @@ header {
 }
 
 .name {
-  color: #172b4d;
+  color: var(--main-darkblue);
 }
 
 .ocupation {
-  color: #36b37e;
+  color: var(--main-green);
 }
 
 .headline .description {
   text-align: center;
-  width: min(100%, 700px);
+  width: min(100%, 500px);
 }
 
 .social-container ul {
@@ -93,14 +106,14 @@ li {
 }
 
 .work-container h2 {
-  color: #172b4d;
+  color: var(--main-darkblue);
   text-align: center;
   font-size: 2.5rem;
   margin-top: 1rem;
 }
 
 hr {
-  background-color: #36b37e;
+  background-color: var(--main-green);
   border-radius: 24px;
   width: 48px;
   height: 4px;
@@ -124,14 +137,14 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ebf0ee;
+  background-color: var(--card-background-color);
 }
 
 .work-card-content {
   background-color: white;
   display: flex;
   flex-direction: column;
-  color: #3a4a42;
+  color: var(--tag-color);
   width: 100%;
 }
 
@@ -152,33 +165,37 @@ hr {
 
 .work-card-content .tags li {
   border-radius: 0.4rem;
-  background-color: #ebf0ee;
-  padding: 0.6rem;
-  font-size: 0.5rem;
+  background-color: var(--card-background-color);
+  padding: 1rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #3a4a42;
+  color: var(--tag-color);
   text-align: center;
 }
 
 .primary-btn {
-  background-color: #36b37f;
+  background-color: var(--main-green);
   border-radius: 4px;
-  padding: 0.8rem;
+  padding: 1rem;
   align-self: center;
   margin-bottom: 0.5rem;
   color: #fff;
-  font-size: 10px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .primary-btn:hover {
   cursor: pointer;
-  background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .primary-btn:active {
-  background-color: #008552;
+  background-color: var(--active-color);
   transform: translateY(2px);
+}
+
+.align-self-start {
+  align-self: flex-start;
 }
 
 .about-container {
@@ -188,8 +205,8 @@ hr {
 .about-me {
   padding: 30px;
   background-image:
-    url("https://marcooquendoc.github.io/Portfolio/images/about.png"),
-    url("https://marcooquendoc.github.io/Portfolio/images/about2.png");
+    url(images/about.png),
+    url(images/about2.png);
   background-position:
     top -30px right,
     bottom left;
@@ -202,13 +219,13 @@ hr {
 .about-me h2 {
   font-size: 2.5rem;
   text-align: center;
-  color: #172b4d;
+  color: var(--main-darkblue);
 }
 
 .about-me .description {
   font-size: 20px;
   text-align: center;
-  color: #42526e;
+  color: var(--paragraph-blue);
   padding-top: 1rem;
   width: min(100%, 60rem);
   display: block;
@@ -230,21 +247,21 @@ hr {
 }
 
 .about-card {
-  border: 1px solid #c1c7d0;
+  border: 1px solid var(--gray-border);
   border-radius: 0.6rem;
   padding-top: calc(1 / 12 * 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ebf0ee;
+  background-color: var(--card-background-color);
 }
 
-.about-card h2 {
+.about-card h3 {
   padding-top: 1rem;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: center;
-  color: #344563;
+  color: var(--nav-darkblue);
 }
 
 .about-card .tags {
@@ -258,10 +275,10 @@ hr {
 .about-card .tags li {
   border-radius: 0.4rem;
   background-color: #fff;
-  padding: 0.6rem;
-  font-size: 0.4rem;
+  padding: 1rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #36b37e;
+  color: var(--main-green);
   text-align: center;
 }
 
@@ -278,7 +295,7 @@ hr {
   font-size: 2rem;
   line-height: 52px;
   text-align: center;
-  color: #172b4d;
+  color: var(--main-darkblue);
   flex-basis: 50%;
   display: block;
   margin: 60px 1fr 58px 1fr;
@@ -306,36 +323,17 @@ hr {
 #name,
 #email {
   height: 48px;
-  border: 1px solid #d0d9d4;
+  border: 1px solid var(--gray-border);
 }
 
 #msg {
   height: 114px;
-  border: 1px solid #60c095;
-}
-
-.form-btn {
-  background-color: #36b37f;
-  border-radius: 4px;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  color: #fff;
-}
-
-.form-btn:hover {
-  cursor: pointer;
-  background: #36b37f;
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-}
-
-.form-btn:active {
-  background-color: #008552;
-  transform: translateY(2px);
+  border: 1px solid var(--main-green);
 }
 
 .developer-email {
   text-align: center;
-  color: #42526e;
+  color: var(--paragraph-blue);
   font-weight: 400;
   font-size: 20px;
   height: 189px;
@@ -347,14 +345,14 @@ hr {
   height: 5px;
   left: calc(50% - 134px / 2 - 0.5px);
   bottom: 8px;
-  background: #0d151e;
+  background: var(--last-bar-color);
   border-radius: 10px;
   margin-bottom: 8px;
 }
 
 @media only screen and (min-width: 50px) {
   .headline {
-    background-image: url("https://marcooquendoc.github.io/Portfolio/images/background.png");
+    background-image: url(images/background.png);
     justify-content: center;
   }
 
@@ -392,7 +390,7 @@ hr {
 
 @media only screen and (min-width: 769px) {
   .headline {
-    background-image: url("https://marcooquendoc.github.io/Portfolio/images/desktop-background.png");
+    background-image: url(images/desktop-background.png);
     justify-content: start;
   }
 
