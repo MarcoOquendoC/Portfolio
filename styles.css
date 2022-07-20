@@ -37,15 +37,17 @@ header {
 }
 
 .top-navigation-container {
-  margin-bottom: 10vh;
+  position: fixed;
+  inset: 0.5rem auto auto auto;
 }
 
-.top-navigation-container a {
+.top-navigation {
   text-decoration: none;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
   color: var(--nav-darkblue);
+  padding: 0.8rem;
 }
 
 .welcome {
@@ -63,7 +65,7 @@ header {
   align-items: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 0 2rem 0 2rem;
+  padding: 3rem 2rem 0 2rem;
 }
 
 .title {
@@ -192,10 +194,6 @@ hr {
 .primary-btn:active {
   background-color: var(--active-color);
   transform: translateY(2px);
-}
-
-.align-self-start {
-  align-self: flex-start;
 }
 
 .about-container {
@@ -350,7 +348,31 @@ hr {
   margin-bottom: 8px;
 }
 
-@media only screen and (min-width: 50px) {
+#portfolioRef:hover {
+  text-shadow: 1px 1px 2px var(--main-green);
+}
+
+#aboutRef:hover {
+  text-shadow: 1px 1px 2px var(--main-green);
+}
+
+#contactRef:hover {
+  text-shadow: 1px 1px 2px var(--main-green);
+}
+
+#projects:focus {
+
+}
+
+#about:hover {
+
+}
+
+#contact:focus {
+
+}
+
+@media only screen and (max-width: 768px) {
   .headline {
     background-image: url(images/background.png);
     justify-content: center;
@@ -363,7 +385,7 @@ hr {
   }
 
   .form-btn {
-    align-self: center;
+    align-self: flex-end;
   }
 
   .only-movile {
@@ -376,6 +398,9 @@ hr {
 
   header {
     justify-content: space-between;
+    width: calc(100% - 2rem);
+    margin: auto;
+    margin-top: 1rem;
   }
 
   .form-input-container {
@@ -388,7 +413,7 @@ hr {
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   .headline {
     background-image: url(images/desktop-background.png);
     justify-content: start;
@@ -398,7 +423,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  }
+   }
 
   footer {
     background-image:
@@ -426,7 +451,44 @@ hr {
     gap: 2rem;
   }
 
-  .form-btn {
+  .form-btn-align {
     align-self: start;
   }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: fixed;
+  inset: 0 0 -1rem 0;
+  border-radius: 0 0 50px 50px;
+  padding-top: 9rem;
+  padding-left: 2rem;
+  gap: 70px;
+}
+
+.close-icon {
+  display: block;
+  position: absolute;
+  inset: 0 1rem auto auto;
+  opacity: 0.5;
+  font-size: 3rem;
+}
+
+.big-font {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.grey-background {
+  background-color: #e5e5e5;
+}
+
+.hide {
+  display: none;
+}
+
+.outline {
+  outline: auto;
 }

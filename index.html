@@ -11,17 +11,16 @@
 <body>
   <header>
     <span class="welcome only-movile">Welcome</span>
-    <nav class="movile only-movile">
-      <a href="#"><img src="images/Icon-Menu.png" alt="hamburger"></a>
+    <img id="hamburger" class="movile only-movile" src="images/Icon-Menu.png" alt="hamburger">
+    <nav id="top-navigation-container" class="top-navigation-container only-desktop">
+      <a id="close-icon" class="hide">&times;</a>
+      <a id="portfolioRef" class="top-navigation" href="#projects">Portfolio</a>
+      <a id="aboutRef" class="top-navigation" href="#about">About</a>
+      <a id="contactRef" class="top-navigation" href="#contact">Contact</a>
     </nav>
   </header>
   <main>
     <section class="headline">
-      <div class="top-navigation-container only-desktop">
-        <a class="top-navigation" href="#projects">Projects</a>
-        <a class="top-navigation" href="#about">About</a>
-        <a class="top-navigation" href="#contact">Contact</a>
-      </div>
       <h1 class="title name">Hey there. I'm Marco</h1>
       <h2 class="title ocupation">I'm a software developer</h2>
       <p class="description">
@@ -40,7 +39,7 @@
         <img src="https://marcooquendoc.github.io/Portfolio/images/down.png" alt="down-icon">
       </a>
     </section>
-    <section id="projects" class="work-container">
+    <section id="projects" class="work-container section">
       <h2>
         My Recent Works
       </h2>
@@ -156,7 +155,7 @@
         </article>
       </div>
     </section>
-    <section id="about" class="about-container">
+    <section id="about" class="about-container section">
       <div class="about-me">
         <h2>About me</h2>
         <p class="description">
@@ -202,7 +201,7 @@
       </div>
     </section>
   </main>
-  <footer id="contact" class="form-container">
+  <footer id="contact" class="form-container section">
     <div class="form-responsive-wrapper">
       <p class="form-description">
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
@@ -220,7 +219,7 @@
           <label for="msg" aria-hidden="true">Message:</label>
           <textarea id="msg" name="message" maxlength="500" placeholder="Enter text here" required></textarea>
         </div>
-        <button type="submit" class="primary-btn align-self-start">Get in touch</button>
+        <button type="submit" class="primary-btn form-btn-align">Get in touch</button>
       </form>
     </div>
     <div class="social-container">
@@ -233,7 +232,7 @@
       </ul>
     </div>
     <p class="developer-email">marcooquendoc@gmail.com</p>
-    <hr class="last-bar">
+    <hr id="last-bar" class="last-bar">
   </footer>
 </body>
 </html>
