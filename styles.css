@@ -37,15 +37,17 @@ header {
 }
 
 .top-navigation-container {
-  margin-bottom: 10vh;
+  position: fixed;
+  inset: 0.5rem auto auto auto;
 }
 
-.top-navigation-container a {
+.top-navigation {
   text-decoration: none;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
   color: var(--nav-darkblue);
+  padding: 0.8rem;
 }
 
 .welcome {
@@ -57,16 +59,17 @@ header {
 
 .headline {
   width: 100%;
-  height: min(100vh, 600px);
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 0 2rem 0 2rem;
+  padding: 3rem 2rem 0 2rem;
 }
 
 .title {
+  margin-top: auto;
   font-weight: 700;
   font-size: 2rem;
   text-align: center;
@@ -82,8 +85,10 @@ header {
 }
 
 .headline .description {
+  margin-top: 1rem;
+  margin-bottom: auto;
   text-align: center;
-  width: min(100%, 500px);
+  width: 80%;
 }
 
 .social-container ul {
@@ -127,7 +132,7 @@ hr {
   grid-auto-rows: auto;
   gap: 1vw;
   margin: 2vw;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
 }
 
 .work-card {
@@ -194,10 +199,6 @@ hr {
   transform: translateY(2px);
 }
 
-.align-self-start {
-  align-self: flex-start;
-}
-
 .about-container {
   margin-top: 1rem;
 }
@@ -213,7 +214,7 @@ hr {
   background-repeat:
     no-repeat,
     no-repeat;
-  background-size: min(20%, 7rem);
+  background-size: 7rem;
 }
 
 .about-me h2 {
@@ -227,7 +228,7 @@ hr {
   text-align: center;
   color: var(--paragraph-blue);
   padding-top: 1rem;
-  width: min(100%, 60rem);
+  width: 100%;
   display: block;
   margin: auto;
 }
@@ -243,7 +244,7 @@ hr {
   grid-auto-rows: auto;
   gap: 2vw;
   margin: 2vw;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
 }
 
 .about-card {
@@ -298,7 +299,7 @@ hr {
   color: var(--main-darkblue);
   flex-basis: 50%;
   display: block;
-  margin: 60px 1fr 58px 1fr;
+  margin: 60px auto 58px auto;
 }
 
 .form {
@@ -350,7 +351,12 @@ hr {
   margin-bottom: 8px;
 }
 
-@media only screen and (min-width: 50px) {
+header nav a.active,
+header nav a:hover {
+  text-shadow: 1px 1px 2px var(--main-green);
+}
+
+@media only screen and (max-width: 768px) {
   .headline {
     background-image: url(images/background.png);
     justify-content: center;
@@ -363,7 +369,7 @@ hr {
   }
 
   .form-btn {
-    align-self: center;
+    align-self: flex-end;
   }
 
   .only-movile {
@@ -376,6 +382,9 @@ hr {
 
   header {
     justify-content: space-between;
+    width: calc(100% - 2rem);
+    margin: auto;
+    margin-top: 1rem;
   }
 
   .form-input-container {
@@ -384,11 +393,11 @@ hr {
 
   .work-grid,
   .about-grid {
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   .headline {
     background-image: url(images/desktop-background.png);
     justify-content: start;
@@ -410,7 +419,7 @@ hr {
     background-repeat:
       no-repeat,
       no-repeat;
-    background-size: min(50%, 21rem), min(20%, 7rem);
+    background-size: 50%, 20%;
   }
 
   .only-movile {
@@ -426,7 +435,44 @@ hr {
     gap: 2rem;
   }
 
-  .form-btn {
+  .form-btn-align {
     align-self: start;
   }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: fixed;
+  inset: 0 0 -1rem 0;
+  border-radius: 0 0 50px 50px;
+  padding-top: 9rem;
+  padding-left: 2rem;
+  gap: 70px;
+}
+
+.close-icon {
+  display: block;
+  position: absolute;
+  inset: 0 1rem auto auto;
+  opacity: 0.5;
+  font-size: 3rem;
+}
+
+.big-font {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.grey-background {
+  background-color: #e5e5e5;
+}
+
+.hide {
+  display: none;
+}
+
+.outline {
+  background-color: red;
 }
