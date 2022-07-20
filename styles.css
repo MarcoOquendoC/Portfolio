@@ -59,7 +59,7 @@ header {
 
 .headline {
   width: 100%;
-  height: min(100vh, 600px);
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,6 +69,7 @@ header {
 }
 
 .title {
+  margin-top: auto;
   font-weight: 700;
   font-size: 2rem;
   text-align: center;
@@ -84,8 +85,10 @@ header {
 }
 
 .headline .description {
+  margin-top: 1rem;
+  margin-bottom: auto;
   text-align: center;
-  width: min(100%, 500px);
+  width: 80%;
 }
 
 .social-container ul {
@@ -129,7 +132,7 @@ hr {
   grid-auto-rows: auto;
   gap: 1vw;
   margin: 2vw;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
 }
 
 .work-card {
@@ -211,7 +214,7 @@ hr {
   background-repeat:
     no-repeat,
     no-repeat;
-  background-size: min(20%, 7rem);
+  background-size: 7rem;
 }
 
 .about-me h2 {
@@ -225,7 +228,7 @@ hr {
   text-align: center;
   color: var(--paragraph-blue);
   padding-top: 1rem;
-  width: min(100%, 60rem);
+  width: 100%;
   display: block;
   margin: auto;
 }
@@ -241,7 +244,7 @@ hr {
   grid-auto-rows: auto;
   gap: 2vw;
   margin: 2vw;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
 }
 
 .about-card {
@@ -296,7 +299,7 @@ hr {
   color: var(--main-darkblue);
   flex-basis: 50%;
   display: block;
-  margin: 60px 1fr 58px 1fr;
+  margin: 60px auto 58px auto;
 }
 
 .form {
@@ -397,7 +400,7 @@ hr {
 
   .work-grid,
   .about-grid {
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
   }
 }
 
@@ -423,7 +426,7 @@ hr {
     background-repeat:
       no-repeat,
       no-repeat;
-    background-size: min(50%, 21rem), min(20%, 7rem);
+    background-size: 50%, 20%;
   }
 
   .only-movile {
@@ -475,8 +478,4 @@ hr {
 
 .hide {
   display: none;
-}
-
-.outline {
-  outline: auto;
 }
