@@ -44,7 +44,7 @@ window.onscroll = () => {
     const height = sec.offsetHeight;
     const id = sec.getAttribute('id');
 
-    if (offset <= top && top <= offset + height) {
+    if (offset <= top && top <= offset + height && id !== 'welcome') {
       navlinks.forEach((links) => {
         links.classList.remove('active');
         document.querySelector(`header nav a[href *= ${id}]`).classList.add('active');
