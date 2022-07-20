@@ -351,15 +351,8 @@ hr {
   margin-bottom: 8px;
 }
 
-#portfolioRef:hover {
-  text-shadow: 1px 1px 2px var(--main-green);
-}
-
-#aboutRef:hover {
-  text-shadow: 1px 1px 2px var(--main-green);
-}
-
-#contactRef:hover {
+header nav a.active,
+header nav a:hover {
   text-shadow: 1px 1px 2px var(--main-green);
 }
 
@@ -478,4 +471,8 @@ hr {
 
 .hide {
   display: none;
+}
+
+.outline {
+  background-color: red;
 }
