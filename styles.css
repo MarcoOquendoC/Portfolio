@@ -360,18 +360,6 @@ hr {
   text-shadow: 1px 1px 2px var(--main-green);
 }
 
-#projects:focus {
-
-}
-
-#about:hover {
-
-}
-
-#contact:focus {
-
-}
-
 @media only screen and (max-width: 768px) {
   .headline {
     background-image: url(images/background.png);
@@ -423,7 +411,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-   }
+  }
 
   footer {
     background-image:

@@ -1,12 +1,11 @@
 const nav = document.getElementById('top-navigation-container');
-const aTags = document.getElementsByClassName('top-navigation');
 const closeIcon = document.getElementById('close-icon');
 const hamburger = document.getElementById('hamburger');
 const portfolio = document.getElementById('portfolioRef');
 const about = document.getElementById('aboutRef');
 const contact = document.getElementById('contactRef');
 
-hamburger.addEventListener("click", function() {
+hamburger.addEventListener('click', () => {
   closeIcon.classList.remove('hide');
   nav.classList.add('nav');
   about.classList.add('big-font');
@@ -15,7 +14,7 @@ hamburger.addEventListener("click", function() {
   closeIcon.classList.add('close-icon');
 });
 
-closeIcon.addEventListener("click", function() {
+closeIcon.addEventListener('click', () => {
   closeIcon.classList.add('hide');
   about.classList.add('top-navigation');
   contact.classList.add('top-navigation');
@@ -27,7 +26,7 @@ closeIcon.addEventListener("click", function() {
   closeIcon.classList.remove('close-icon');
 });
 
-portfolio.addEventListener("click", function() {
+portfolio.addEventListener('click', () => {
   closeIcon.classList.add('hide');
   about.classList.add('top-navigation');
   contact.classList.add('top-navigation');
@@ -39,7 +38,7 @@ portfolio.addEventListener("click", function() {
   closeIcon.classList.remove('close-icon');
 });
 
-about.addEventListener("click", function() {
+about.addEventListener('click', () => {
   closeIcon.classList.add('hide');
   about.classList.add('top-navigation');
   contact.classList.add('top-navigation');
@@ -51,7 +50,7 @@ about.addEventListener("click", function() {
   closeIcon.classList.remove('close-icon');
 });
 
-contact.addEventListener("click", function() {
+contact.addEventListener('click', () => {
   closeIcon.classList.add('hide');
   about.classList.add('top-navigation');
   contact.classList.add('top-navigation');
@@ -62,4 +61,3 @@ contact.addEventListener("click", function() {
   portfolio.classList.remove('big-font');
   closeIcon.classList.remove('close-icon');
 });
-
