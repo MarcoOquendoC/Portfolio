@@ -27,8 +27,8 @@ function closeMenu() {
 }
 
 hamburger.addEventListener('click', openMenu);
+about.addEventListener('click', openMenu);
 
-about.addEventListener('click', closeMenu);
 contact.addEventListener('click', closeMenu);
 closeIcon.addEventListener('click', closeMenu);
 portfolio.addEventListener('click', closeMenu);
