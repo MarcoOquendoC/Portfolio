@@ -152,7 +152,7 @@ projects.forEach((e, project) => {
 
 // See Project Popup Feature
 const openModalButtons = document.querySelectorAll('.see-project');
-const closeModalButtons = document.querySelectorAll('.close-btn');
+const closeModalButtons = document.querySelectorAll('.close-button');
 const modalTitle = document.querySelector('#modal #title');
 const modalInfo = document.querySelector('#modal #info');
 
@@ -172,20 +172,20 @@ openModalButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const project = button.id;
     const modalList = document.getElementById('modal-list');
-    const modal = document.querySelector('#modal');
     const img = document.querySelector('#modal-img');
-
+    
     modalList.innerHTML = '';
     projects.get(project).tags.forEach((tag) => {
       const liToAdd = document.createElement('li');
       liToAdd.insertAdjacentText('afterbegin', tag);
       modalList.appendChild(liToAdd);
     });
-
+    
     img.setAttribute('src', projects.get(project).img.src);
     img.setAttribute('alt', projects.get(project).img.alt);
     modalTitle.textContent = projects.get(project).title;
     modalInfo.textContent = projects.get(project).info;
+    const modal = document.querySelector('#modal');
     openModal(modal);
   });
 });
@@ -199,7 +199,7 @@ overlay.addEventListener('click', () => {
 
 closeModalButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    const modal = button.closest('.modal');
+    const modal = button.closest('#modal');
     closeModal(modal);
   });
 });

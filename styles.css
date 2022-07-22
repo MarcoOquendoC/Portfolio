@@ -492,7 +492,7 @@ header nav a.active {
   max-width: 90%;
   padding: 1.5rem;
   max-height: 95%;
-  position: relative;
+  position: fixed;
   background-color: white;
   transition: 200ms ease-in-out;
   transform: translate(-50%, -50%) scale(0);
