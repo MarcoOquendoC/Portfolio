@@ -173,8 +173,6 @@ openModalButtons.forEach((button) => {
     const project = button.id;
     const modalList = document.getElementById('modal-list');
     const modal = document.querySelector('#modal');
-    const liveA = document.querySelector('#live-target');
-    const sourceA = document.querySelector('#source-target');
     const img = document.querySelector('#modal-img');
 
     modalList.innerHTML = '';
@@ -188,8 +186,6 @@ openModalButtons.forEach((button) => {
     img.setAttribute('alt', projects.get(project).img.alt);
     modalTitle.textContent = projects.get(project).title;
     modalInfo.textContent = projects.get(project).info;
-    liveA.setAttribute('href', projects.get(project).liveLink);
-    sourceA.setAttribute('href', projects.get(project).sourceLink);
     openModal(modal);
   });
 });
