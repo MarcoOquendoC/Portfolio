@@ -476,3 +476,7 @@ header nav a:hover {
 .outline {
   background-color: red;
 }
+
+#error-msg {
+  color: rgb(171, 88, 88);
+}
