@@ -62,7 +62,7 @@ projects.set('p1', {
   title: 'Project 1 from MAP',
   img: { src: 'images/proyImages/proy1.png', alt: 'article image one' },
   tags: ['ruby', 'Ruby on rails', 'css', 'JavaScript', 'html', 'scss'],
-  info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo tempora, veritatis inventore magni ad sed voluptatum eum aspernatur nobis distinctio, sit, rem consequatur qui soluta dolor quibusdam architecto minus.',
+  info: 'Quam illum perferendis minus deserunt quisquam soluta accusamus? Nisi sint enim temporibus reiciendis tenetur reprehenderit in ad odit repellendus dolor.',
   liveLink: 'https://github.com/MarcoOquendoC/Portfolio/blob/main/README.md',
   sourceLink: 'https://github.com/MarcoOquendoC/Portfolio',
 });
@@ -71,7 +71,7 @@ projects.set('p2', {
   title: 'Project 2 from MAP',
   img: { src: 'images/proyImages/proy2.png', alt: 'article image two' },
   tags: ['ruby', 'Ruby on rails', 'css', 'JavaScript', 'html'],
-  info: 'Esse accusantium sed expedita! Enim ea maiores tenetur repellendus quas sint quasi temporibus rem, voluptate minus harum ad omnis libero odit tempora doloremque. Earum perspiciatis, dolorum adipisci tenetur ab laudantium!',
+  info: 'Hic, quam? Deleniti ipsam, impedit dolores quae perspiciatis modi, iure minima ea dolor accusantium deserunt accusamus consequatur. Officia, nesciunt in.',
   liveLink: 'https://github.com/MarcoOquendoC/Portfolio/blob/main/README.md',
   sourceLink: 'https://github.com/MarcoOquendoC/Portfolio',
 });
@@ -80,7 +80,7 @@ projects.set('p3', {
   title: 'Project 3 from MAP',
   img: { src: 'images/proyImages/proy3.png', alt: 'article image three' },
   tags: ['ruby', 'Ruby on rails', 'css', 'JavaScript'],
-  info: 'Fuga, vero nesciunt minus cupiditate debitis nulla eveniet quia eius quis, repellat dolorem, officiis et atque laborum illum accusamus. Sint maiores amet omnis accusantium blanditiis! Esse officia voluptates natus quia.',
+  info: 'Eveniet impedit culpa sed laborum deserunt, reprehenderit ullam earum, iure modi blanditiis cupiditate quod itaque maxime fugit autem iste explicabo.',
   liveLink: 'https://github.com/MarcoOquendoC/Portfolio/blob/main/README.md',
   sourceLink: 'https://github.com/MarcoOquendoC/Portfolio',
 });
@@ -89,7 +89,7 @@ projects.set('p4', {
   title: 'Project 4 from MAP',
   img: { src: 'images/proyImages/proy4.png', alt: 'article image four' },
   tags: ['ruby', 'Ruby on rails', 'css'],
-  info: 'Laudantium itaque sapiente repellendus quis. Sint incidunt tenetur voluptate veniam suscipit unde, reiciendis repellendus quis totam, blanditiis temporibus earum tempora, assumenda quia dicta consequuntur quos molestiae dolorum impedit voluptatum magnam.',
+  info: 'Quod totam est tenetur beatae iure quam labore reiciendis itaque, debitis vero esse asperiores doloribus repudiandae ipsam ratione! Officiis, vitae!',
   liveLink: 'https://github.com/MarcoOquendoC/Portfolio/blob/main/README.md',
   sourceLink: 'https://github.com/MarcoOquendoC/Portfolio',
 });
@@ -98,7 +98,7 @@ projects.set('p5', {
   title: 'Project 5 from MAP',
   img: { src: 'images/proyImages/proy5.png', alt: 'article image five' },
   tags: ['ruby', 'Ruby on rails'],
-  info: 'Corporis eligendi quidem sed possimus expedita nemo dolorem exercitationem mollitia explicabo nam laborum sapiente, aspernatur amet fugit. Obcaecati similique mollitia omnis pariatur eum qui, minus, adipisci officiis, tempora nobis error.',
+  info: 'Quis, saepe. Adipisci nulla consequatur nesciunt reiciendis quo dicta magni, voluptatem numquam ex eum autem expedita mollitia! Tempora, qui natus?',
   liveLink: 'https://github.com/MarcoOquendoC/Portfolio/blob/main/README.md',
   sourceLink: 'https://github.com/MarcoOquendoC/Portfolio',
 });
@@ -107,7 +107,7 @@ projects.set('p6', {
   title: 'Project 6 from MAP',
   img: { src: 'images/proyImages/proy6.png', alt: 'article image six' },
   tags: ['ruby'],
-  info: 'Dolor fuga ullam adipisci voluptates cupiditate ea. Laborum, dolor! Repellendus dignissimos voluptate rerum hic, molestias quod obcaecati similique dolorem incidunt cumque? Obcaecati accusamus quos quae. Fugiat beatae molestias a minus?',
+  info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rem ratione exercitationem a ipsam sunt iste numquam temporibus eos voluptates?',
   liveLink: 'https://github.com/MarcoOquendoC/Portfolio/blob/main/README.md',
   sourceLink: 'https://github.com/MarcoOquendoC/Portfolio',
 });
@@ -173,14 +173,12 @@ openModalButtons.forEach((button) => {
     const project = button.id;
     const modalList = document.getElementById('modal-list');
     const img = document.querySelector('#modal-img');
-    
     modalList.innerHTML = '';
     projects.get(project).tags.forEach((tag) => {
       const liToAdd = document.createElement('li');
       liToAdd.insertAdjacentText('afterbegin', tag);
       modalList.appendChild(liToAdd);
     });
-    
     img.setAttribute('src', projects.get(project).img.src);
     img.setAttribute('alt', projects.get(project).img.alt);
     modalTitle.textContent = projects.get(project).title;
@@ -203,3 +201,5 @@ closeModalButtons.forEach((button) => {
     closeModal(modal);
   });
 });
+
+
