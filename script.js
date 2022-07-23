@@ -52,3 +52,18 @@ window.onscroll = () => {
     }
   });
 };
+
+// Form validation feature
+const email = document.getElementById('email');
+const form = document.getElementById('contactform');
+const errorMsg = document.getElementById('error-msg');
+
+form.addEventListener('submit', (e) => {
+  errorMsg.classList.add('hide');
+  const regx = /[A-Z]/g;
+  if (regx.test(email.value)) {
+    e.preventDefault();
+    email.value = email.value.toLowerCase();
+    errorMsg.classList.remove('hide');
+  }
+});
