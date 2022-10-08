@@ -59,12 +59,12 @@ window.onscroll = () => {
 const projects = new Map();
 
 projects.set('p1', {
-  title: 'Project 1 from MAP',
+  title: 'Capstone #1 : Applied Power Electronics Conference',
   img: { src: 'images/proyImages/proy1.png', alt: 'article image one' },
-  tags: ['ruby', 'Ruby on rails', 'css', 'JavaScript', 'html', 'scss'],
-  info: 'Quam illum perferendis minus deserunt quisquam soluta accusamus? Nisi sint enim temporibus reiciendis tenetur reprehenderit in ad odit repellendus dolor.',
-  liveLink: 'https://github.com/MarcoOquendoC/Portfolio/blob/main/README.md',
-  sourceLink: 'https://github.com/MarcoOquendoC/Portfolio',
+  tags: ['html', 'css', 'JavaScript'],
+  info: 'Based on an online website for a conference. Applied Power Electronics Conference (APEC) uses the acquired knowledge about HTML, CSS, and JavaScript in a single project.',
+  liveLink: 'https://marcooquendoc.github.io/CapstoneAPEC/',
+  sourceLink: 'https://github.com/MarcoOquendoC/CapstoneAPEC',
 });
 
 projects.set('p2', {
@@ -184,6 +184,13 @@ openModalButtons.forEach((button) => {
     modalTitle.textContent = projects.get(project).title;
     modalInfo.textContent = projects.get(project).info;
     const modal = document.querySelector('#modal');
+
+    const liveBtn = document.getElementById('live');
+    liveBtn.setAttribute('href', projects.get(project).liveLink);
+
+    const sourceBtn = document.getElementById('source');
+    sourceBtn.setAttribute('href', projects.get(project).sourceLink);
+
     openModal(modal);
   });
 });
