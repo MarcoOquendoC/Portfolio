@@ -553,3 +553,7 @@ header nav a.active {
   align-items: center;
   justify-content: center;
 }
+
+#error-msg {
+  color: rgb(171, 88, 88);
+}
