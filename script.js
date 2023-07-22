@@ -61,55 +61,55 @@ const projects = new Map();
 projects.set('p1', {
   title: 'Capstone #1 : Applied Power Electronics Conference',
   img: { src: 'images/proyImages/proy1.png', alt: 'article image one' },
-  tags: ['html', 'css', 'JavaScript'],
+  tags: ['HTML', 'CSS', 'JavaScript'],
   info: 'Based on an online website for a conference. Applied Power Electronics Conference (APEC) uses the acquired knowledge about HTML, CSS, and JavaScript in a single project.',
   liveLink: 'https://marcooquendoc.github.io/CapstoneAPEC/',
   sourceLink: 'https://github.com/MarcoOquendoC/CapstoneAPEC',
 });
 
 projects.set('p2', {
-  title: 'Project 2 from MAP',
-  img: { src: 'images/proyImages/proy2.png', alt: 'article image two' },
-  tags: ['ruby', 'Ruby on rails', 'css', 'JavaScript', 'html'],
-  info: 'Hic, quam? Deleniti ipsam, impedit dolores quae perspiciatis modi, iure minima ea dolor accusantium deserunt accusamus consequatur. Officia, nesciunt in.',
-  liveLink: 'https://github.com/MarcoOquendoC/Portfolio/blob/main/README.md',
-  sourceLink: 'https://github.com/MarcoOquendoC/Portfolio',
+  title: 'Budget-App',
+  img: { src: 'images/proyImages/proy2.png', alt: 'Budget-App' },
+  tags: ['Ruby', 'Ruby on Rails', 'HTML', 'CSS', 'JavaScript'],
+  info: 'Mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+  liveLink: 'https://github.com/MarcoOquendoC/Budget-app',
+  sourceLink: 'https://github.com/MarcoOquendoC/Budget-app',
 });
 
 projects.set('p3', {
-  title: 'Project 3 from MAP',
+  title: 'CatalogOfMyThings',
   img: { src: 'images/proyImages/proy3.png', alt: 'article image three' },
-  tags: ['ruby', 'Ruby on rails', 'css', 'JavaScript'],
-  info: 'Eveniet impedit culpa sed laborum deserunt, reprehenderit ullam earum, iure modi blanditiis cupiditate quod itaque maxime fugit autem iste explicabo.',
-  liveLink: 'https://github.com/MarcoOquendoC/Portfolio/blob/main/README.md',
-  sourceLink: 'https://github.com/MarcoOquendoC/Portfolio',
+  tags: ['Ruby'],
+  info: 'Console app that will help keeping record of different types of things you own like: books, music albums, movies, and games',
+  liveLink: 'https://replit.com/@marcooquendoc/CatalogOfMyThings-RubyCapstone#main.rb',
+  sourceLink: 'https://github.com/MarcoOquendoC/CatalogOfMyThings-RubyCapstone',
 });
 
 projects.set('p4', {
-  title: 'Project 4 from MAP',
+  title: `Space Traveler's Hub`,
   img: { src: 'images/proyImages/proy4.png', alt: 'article image four' },
-  tags: ['ruby', 'Ruby on rails', 'css'],
-  info: 'Quod totam est tenetur beatae iure quam labore reiciendis itaque, debitis vero esse asperiores doloribus repudiandae ipsam ratione! Officiis, vitae!',
-  liveLink: 'https://github.com/MarcoOquendoC/Portfolio/blob/main/README.md',
-  sourceLink: 'https://github.com/MarcoOquendoC/Portfolio',
+  tags: ['HTML', 'CSS', 'JavaScript'],
+  info: 'In this App We will be working with the real live data from the SpaceX API. We build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+  liveLink: 'https://marcooquendoc.github.io/space-travelers/',
+  sourceLink: 'https://github.com/MarcoOquendoC/space-travelers',
 });
 
 projects.set('p5', {
-  title: 'Project 5 from MAP',
+  title: 'School Library',
   img: { src: 'images/proyImages/proy5.png', alt: 'article image five' },
-  tags: ['ruby', 'Ruby on rails'],
-  info: 'Quis, saepe. Adipisci nulla consequatur nesciunt reiciendis quo dicta magni, voluptatem numquam ex eum autem expedita mollitia! Tempora, qui natus?',
-  liveLink: 'https://github.com/MarcoOquendoC/Portfolio/blob/main/README.md',
-  sourceLink: 'https://github.com/MarcoOquendoC/Portfolio',
+  tags: ['Ruby'],
+  info: 'Is a library tool Console App to record what books are in the library and who borrows them, it was built using Object Oriented Programming',
+  liveLink: 'https://github.com/MarcoOquendoC/OOP-school-library',
+  sourceLink: 'hhttps://github.com/MarcoOquendoC/OOP-school-library',
 });
 
 projects.set('p6', {
-  title: 'Project 6 from MAP',
+  title: 'Guess the blur',
   img: { src: 'images/proyImages/proy6.png', alt: 'article image six' },
-  tags: ['ruby'],
-  info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rem ratione exercitationem a ipsam sunt iste numquam temporibus eos voluptates?',
-  liveLink: 'https://github.com/MarcoOquendoC/Portfolio/blob/main/README.md',
-  sourceLink: 'https://github.com/MarcoOquendoC/Portfolio',
+  tags: ['HTML', 'CSS', 'JavaScript'],
+  info: '"Guess the Blur" is a web app that displays a list of random pictures. The user can filter the list by author selecting the search mode. Also, the user can tap an item from the list to switch to the details page of the corresponding picture.',
+  liveLink: 'https://deploy-preview-1--friendly-rugelach-ed85f6.netlify.app/',
+  sourceLink: 'https://github.com/MarcoOquendoC/capstone3',
 });
 
 // Build Portfolio Section
