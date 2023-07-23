@@ -553,3 +553,12 @@ header nav a.active {
   align-items: center;
   justify-content: center;
 }
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+.redinline {
+  color: red;
+  display: inline;
+}
