@@ -59,7 +59,7 @@ window.onscroll = () => {
 const projects = new Map();
 
 projects.set('p1', {
-  title: 'Capstone #1 : Applied Power Electronics Conference',
+  title: 'Applied Power Electronics Conference',
   img: { src: 'images/proyImages/proy1.png', alt: 'article image one' },
   tags: ['HTML', 'CSS', 'JavaScript'],
   info: 'Based on an online website for a conference. Applied Power Electronics Conference (APEC) uses the acquired knowledge about HTML, CSS, and JavaScript in a single project.',
@@ -77,7 +77,7 @@ projects.set('p2', {
 });
 
 projects.set('p3', {
-  title: 'CatalogOfMyThings',
+  title: 'Catalog Of My Things Console App',
   img: { src: 'images/proyImages/proy3.png', alt: 'article image three' },
   tags: ['Ruby'],
   info: 'Console app that will help keeping record of different types of things you own like: books, music albums, movies, and games',
@@ -88,14 +88,14 @@ projects.set('p3', {
 projects.set('p4', {
   title: "Space Traveler's Hub",
   img: { src: 'images/proyImages/proy4.png', alt: 'article image four' },
-  tags: ['HTML', 'CSS', 'JavaScript'],
+  tags: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Jest'],
   info: 'In this App We will be working with the real live data from the SpaceX API. We build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
   liveLink: 'https://marcooquendoc.github.io/space-travelers/',
   sourceLink: 'https://github.com/MarcoOquendoC/space-travelers',
 });
 
 projects.set('p5', {
-  title: 'School Library',
+  title: 'School Library Console App',
   img: { src: 'images/proyImages/proy5.png', alt: 'article image five' },
   tags: ['Ruby'],
   info: 'Is a library tool Console App to record what books are in the library and who borrows them, it was built using Object Oriented Programming',
@@ -104,9 +104,9 @@ projects.set('p5', {
 });
 
 projects.set('p6', {
-  title: 'Guess the blur',
+  title: 'Guess The Blur',
   img: { src: 'images/proyImages/proy6.png', alt: 'article image six' },
-  tags: ['HTML', 'CSS', 'JavaScript'],
+  tags: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Jest'],
   info: '"Guess the Blur" is a web app that displays a list of random pictures. The user can filter the list by author selecting the search mode. Also, the user can tap an item from the list to switch to the details page of the corresponding picture.',
   liveLink: 'https://deploy-preview-1--friendly-rugelach-ed85f6.netlify.app/',
   sourceLink: 'https://github.com/MarcoOquendoC/capstone3',
