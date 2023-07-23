@@ -559,6 +559,17 @@ header nav a.active {
 }
 
 .redinline {
-  color: red;
   display: inline;
+  color: red;
+}
+
+.inline {
+  display: inline;
+  color: rgb(94, 92, 92);
+}
+
+.noline {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 1000;
 }
