@@ -86,7 +86,7 @@ projects.set('p3', {
 });
 
 projects.set('p4', {
-  title: `Space Traveler's Hub`,
+  title: "Space Traveler's Hub",
   img: { src: 'images/proyImages/proy4.png', alt: 'article image four' },
   tags: ['HTML', 'CSS', 'JavaScript'],
   info: 'In this App We will be working with the real live data from the SpaceX API. We build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
